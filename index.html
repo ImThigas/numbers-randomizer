@@ -3,6 +3,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Numbers - Sorteador de números</title>
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="styles/index.css" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -48,7 +49,7 @@
           </li>
         </ul>
       </header>
-      
+
       <main>
         <div id="title-form">
           <h2>Quero sortear:</h2>
@@ -59,28 +60,28 @@
         </div>
         <form action="">
           <div id="sort-form">
-            <div class="quantity-numbers">
+            <div class="quantity-numbers input-default">
               <fieldset>
                 <legend>Números</legend>
-                <input type="text" name="quantity" id="quantity" />
+                <input type="text" name="quantity" id="quantity" value="2" />
               </fieldset>
             </div>
-            <div class="initial-number">
+            <div class="initial-number input-default">
               <fieldset>
                 <legend>De</legend>
-                <input type="text" name="initial" id="initial" />
+                <input type="text" name="initial" id="initial" value="1" />
               </fieldset>
             </div>
-            <div class="last-number">
+            <div class="last-number input-default">
               <fieldset>
                 <legend>Até</legend>
-                <input type="text" name="last" id="last" />
+                <input type="text" name="last" id="last" value="100" />
               </fieldset>
             </div>
           </div>
-          <div class="input-checkbox">
+          <div id="input-checkbox">
             <div id="switch-checkbox">
-              <input type="checkbox" name="repeat" id="repeat" />
+              <input type="checkbox" name="repeat" id="repeat" checked />
             </div>
             <span>Não repetir número</span>
           </div>

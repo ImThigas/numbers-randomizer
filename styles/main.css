@@ -1,0 +1,112 @@
+main {
+  display: grid;
+  gap: 2.5rem;
+  & #title-form {
+    & h2 {
+      font: var(--label-md);
+      color: var(--content-primary);
+      margin-bottom: 0.125rem;
+      text-transform: uppercase;
+    }
+    & p {
+      font: var(--paragraph-md);
+      color: var(--content-tertiary);
+    }
+  }
+}
+
+form {
+  & #sort-form {
+    display: flex;
+    justify-content: start;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    & .input-default {
+      & fieldset {
+        border: none;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        & legend {
+          font: var(--label-sm);
+          color: var(--content-secondary);
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+          text-align: center;
+        }
+        & input {
+          padding: 4px 8px;
+          width: 5.375rem;
+          height: 3.5rem;
+          font: var(--display-sm);
+          color: var(--content-primary);
+          border: 2px solid transparent;
+          border-radius: 0.5rem;
+          background: #111012;
+          text-align: center;
+          background-origin: border-box;
+          background-clip: padding-box, border-box;
+          background-image: linear-gradient(#111012, #111012);
+          transition: all 0.3s ease;
+          &:focus-within {
+            border: 2px solid transparent;
+            background-image: linear-gradient(#111012, #111012),
+              var(--gradient-border);
+            outline: none;
+          }
+        }
+      }
+      & .quantity-numbers {
+        grid-area: num;
+      }
+      & .initial-number {
+        grid-area: initial;
+      }
+      & .last-number {
+        grid-area: last;
+      }
+    }
+  }
+  & #input-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+    & #switch-checkbox {
+      position: relative;
+      width: 1.875rem;
+      height: 1.25rem;
+      background-color: var(--content-tertiary);
+      border-radius: 1rem;
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: var(--content-primary);
+        width: 0.875rem;
+        height: 0.875rem;
+        border-radius: 50%;
+        align-self: center;
+        transform: translateX(0.1875rem);
+        transition: transform 0.3s ease;
+      }
+      &:has(input[type="checkbox"]:checked) {
+        background: linear-gradient(-72deg, #d586e0 0%, #91a1fa 98.93%);
+        &::after {
+          transform: translateX(calc(1.875rem - (0.1875rem + 0.875rem)));
+        }
+      }
+      & input {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        z-index: 1;
+        cursor: pointer;
+      }
+    }
+    & span{
+        font:.75rem/150% "Inter", sans-serif;
+        color: var(--content-primary);
+    }
+  }
+}
