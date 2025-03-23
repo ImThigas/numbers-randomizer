@@ -13,6 +13,8 @@
 
 header {
   & div {
+    display: grid;
+    gap: .5rem;
     margin-bottom: 2.625rem;
     & span {
       background: var(--gradient-content);
@@ -20,7 +22,6 @@ header {
       color: transparent;
       text-transform: uppercase;
       font: var(--overline);
-      margin-bottom: 0.5rem;
     }
     & h1{
         color: var(--content-primary);

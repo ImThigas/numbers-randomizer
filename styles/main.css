@@ -16,6 +16,7 @@ main {
 }
 
 form {
+    margin-bottom: 5rem;
   & #sort-form {
     display: flex;
     justify-content: start;
@@ -106,6 +107,28 @@ form {
     }
     & span{
         font:.75rem/150% "Inter", sans-serif;
+        color: var(--content-primary);
+    }
+  }
+  & #submit-button{
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    background: var(--bg-tertiary);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    & input{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        opacity: 0;
+    }
+    & span{
+        font: var(--label-sm);
+        text-transform: uppercase;
         color: var(--content-primary);
     }
   }
