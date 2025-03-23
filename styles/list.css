@@ -1,0 +1,18 @@
+ul{
+    list-style: none;
+    display: grid;
+    gap: 2.25rem;
+    & li{
+        display: flex;
+        align-items: start;
+        gap: .5rem;
+        & span{
+            font: var(--paragraph-md);
+            color: var(--content-brand);
+        }
+        & p{
+            font: var(--paragraph-sm);
+            color: var(--content-secondary);
+        }
+    }
+}
