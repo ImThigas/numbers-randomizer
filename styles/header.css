@@ -1,0 +1,31 @@
+#logo {
+  margin-block: 2.75rem 2.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6875rem;
+  justify-content: center;
+  & span {
+    font: 800 1.5rem/130% var(--ff-sora);
+    color: var(--content-primary);
+    text-transform: uppercase;
+  }
+}
+
+header {
+  & div {
+    margin-bottom: 2.625rem;
+    & span {
+      background: var(--gradient-content);
+      background-clip: text;
+      color: transparent;
+      text-transform: uppercase;
+      font: var(--overline);
+      margin-bottom: 0.5rem;
+    }
+    & h1{
+        color: var(--content-primary);
+        font: var(--display-md);
+        text-transform: uppercase;
+    }
+  }
+}
