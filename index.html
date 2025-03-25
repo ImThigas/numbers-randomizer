@@ -17,104 +17,116 @@
   </head>
   <body>
     <div class="container">
-      <nav id="logo">
-        <img src="assets/icon-numbers.svg" alt="Icone Numbers" />
-        <span id="text-logo">numbers</span>
-      </nav>
+      <a href="">
+        <nav id="logo">
+          <img src="assets/icon-numbers.svg" alt="Icone Numbers" />
+          <span id="text-logo">numbers</span>
+        </nav>
+      </a>
       <div class="desktop-organization">
-      <header>
-        <div>
-          <span>online - gratuito</span>
-          <h1>
-            Sorteador <br />
-            de Números
-          </h1>
-        </div>
-        <ul class="desktop-only">
-          <li>
-            <img src="assets/icon-frame.svg" alt="" />
-            <div class="explanation">
-              <span>Como funciona o sorteador de números?</span>
+        <header>
+          <div>
+            <span>online - gratuito</span>
+            <h1>
+              Sorteador <br />
+              de Números
+            </h1>
+          </div>
+          <ul class="desktop-only">
+            <li>
+              <img src="assets/icon-frame.svg" alt="" />
+              <div class="explanation">
+                <span>Como funciona o sorteador de números?</span>
+                <p>
+                  O sorteador utiliza um algoritmo de geração aleatória para
+                  criar números dentro do intervalo especificado pelo usuário.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="assets/icon-frame.svg" alt="" />
+              <div class="explanation">
+                <span>Posso escolher o intervalo dos números?</span>
+                <p>
+                  Sim, você pode definir os valores mínimo e máximo para o
+                  intervalo dos números sorteados.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </header>
+        <div class="right">
+          <main>
+            <div id="title-form">
+              <h2>Quero sortear:</h2>
               <p>
-                O sorteador utiliza um algoritmo de geração aleatória para criar
-                números dentro do intervalo especificado pelo usuário.
+                Defina o intervalo e a quantidade de números, clique em
+                "Sortear" e veja os resultados na tela. É rápido e fácil!
               </p>
             </div>
-          </li>
-          <li>
-            <img src="assets/icon-frame.svg" alt="" />
-            <div class="explanation">
-              <span>Posso escolher o intervalo dos números?</span>
-              <p>
-                Sim, você pode definir os valores mínimo e máximo para o
-                intervalo dos números sorteados.
-              </p>
+            <form id="first-form">
+              <div id="sort-form">
+                <div class="quantity-numbers input-default">
+                  <fieldset>
+                    <legend>Números</legend>
+                    <input
+                      type="text"
+                      name="quantity"
+                      id="quantity"
+                      value="2"
+                    />
+                  </fieldset>
+                </div>
+                <div class="initial-number input-default">
+                  <fieldset>
+                    <legend>De</legend>
+                    <input type="text" name="initial" id="initial" value="1" />
+                  </fieldset>
+                </div>
+                <div class="final-number input-default">
+                  <fieldset>
+                    <legend>Até</legend>
+                    <input type="text" name="last" id="final" value="100" />
+                  </fieldset>
+                </div>
+              </div>
+              <div id="input-checkbox">
+                <div id="switch-checkbox">
+                  <input type="checkbox" name="repeat" id="repeat" checked />
+                </div>
+                <span>Não repetir número</span>
+              </div>
+              <div id="submit-button">
+                <input type="submit" name="submit" id="submit" />
+                <span>Sortear</span>
+                <img src="assets/icon-arrow.svg" alt="" />
+              </div>
+            </form>
+          </main>
+          <section id="sort-numbers">
+            <div class="title-sort">
+              <h2>Resultado do sorteio</h2>
+              <span>1º resultado</span>
             </div>
-          </li>
-        </ul>
-      </header>
-      <div class="right">
-      <main>
-        <div id="title-form">
-          <h2>Quero sortear:</h2>
-          <p>
-            Defina o intervalo e a quantidade de números, clique em "Sortear" e
-            veja os resultados na tela. É rápido e fácil!
-          </p>
+            <div class="sorted-numbers"></div>
+            <div class="repeat-button">
+              <form id="repeat-form">
+                <input
+                  type="submit"
+                  name="submit"
+                  id="repeat-submit"
+                  disabled
+                />
+              </form>
+              <span>Sortear Novamente</span>
+              <div class="repeat-icon">
+                <img src="assets/internal-repeatIcon.svg" alt="" />
+                <img src="assets/external-repeatIcon.svg" alt="" />
+              </div>
+            </div>
+          </section>
         </div>
-        <form id="first-form">
-          <div id="sort-form">
-            <div class="quantity-numbers input-default">
-              <fieldset>
-                <legend>Números</legend>
-                <input type="text" name="quantity" id="quantity" value="2" />
-              </fieldset>
-            </div>
-            <div class="initial-number input-default">
-              <fieldset>
-                <legend>De</legend>
-                <input type="text" name="initial" id="initial" value="1" />
-              </fieldset>
-            </div>
-            <div class="final-number input-default">
-              <fieldset>
-                <legend>Até</legend>
-                <input type="text" name="last" id="final" value="100" />
-              </fieldset>
-            </div>
-          </div>
-          <div id="input-checkbox">
-            <div id="switch-checkbox">
-              <input type="checkbox" name="repeat" id="repeat" checked />
-            </div>
-            <span>Não repetir número</span>
-          </div>
-          <div id="submit-button">
-            <input type="submit" name="submit" id="submit" />
-            <span>Sortear</span>
-            <img src="assets/icon-arrow.svg" alt="" />
-          </div>
-        </form>
-      </main>
-      <section id="sort-numbers">
-        <div class="title-sort">
-          <h2>Resultado do sorteio</h2>
-          <span>1º resultado</span>
-        </div>
-        <div class="sorted-numbers"></div>
-        <div class="repeat-button">
-          <form id="repeat-form">
-            <input type="submit" name="submit" id="repeat-submit" disabled/>
-          </form>
-          <span>Sortear Novamente</span>
-          <div class="repeat-icon">
-            <img src="assets/internal-repeatIcon.svg" alt="">
-            <img src="assets/external-repeatIcon.svg" alt="">
-          </div>
-        </div>
-      </section>
-    </div>
-    </div>
+      </div>
       <footer class="mobile-only">
         <ul>
           <li>
