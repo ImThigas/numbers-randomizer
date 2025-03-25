@@ -93,6 +93,12 @@ a{
     margin-inline: auto;
     max-width: 85.375rem;
     padding-inline: 4.375rem;
-    margin-block: 4.75rem;
+    margin-block: 6.75rem;
 }
+}
+
+@media (height < 47.875em){
+  .container{
+    margin-block: 4.75rem
+  }
 }
