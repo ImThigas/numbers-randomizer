@@ -98,9 +98,7 @@ function sortCheck(init, fin) {
   for (let i = init; i <= fin; i++) {
     numbers.push(i);
   }
-  console.log(numbers);
   numbers = numbers.sort(() => Math.random() - 0.5);
-  console.log(numbers);
   return numbers;
 }
 
@@ -112,7 +110,6 @@ function sortNum(quant, init, fin) {
     numbersSort.push(num);
     i++;
   }
-  console.log(numbersSort);
   return numbersSort;
 }
 

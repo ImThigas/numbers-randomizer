@@ -30,3 +30,34 @@ header {
     }
   }
 }
+
+
+@media (width > 80em){
+  #logo{
+    justify-content: start;
+  }
+
+  header{
+    & div{
+      margin-bottom: 2.375rem;
+      & h1{
+        font: var(--display-lg);
+      }
+    }
+    & ul{
+      & li{
+        max-width: 24.125rem;
+      }
+    }
+  }
+
+  .desktop-organization{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 6.75rem;
+    & .right{
+      align-self: center;
+    }
+  }
+}

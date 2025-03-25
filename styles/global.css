@@ -79,6 +79,9 @@ body {
   display: none;
 }
 @media (width > 80em) {
+  body{
+    overflow: hidden;
+  }
   .desktop-only {
     display: initial;
   }
@@ -88,5 +91,7 @@ body {
   .container{
     margin-inline: auto;
     max-width: 85.375rem;
+    padding-inline: 4.375rem;
+    margin-block: 6.75rem;
 }
 }

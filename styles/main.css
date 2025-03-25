@@ -10,7 +10,7 @@ main {
     }
     & p {
       font: var(--paragraph-md);
-      color: var(--content-tertiary);
+      color: var(--content-secondary);
     }
   }
 }
@@ -198,4 +198,12 @@ form {
   100%{
     transform: translateX(0px);
   }
+}
+
+@media (width >80em){
+  main{
+    & form{
+      margin-bottom: 0;
+    }
+  } 
 }
