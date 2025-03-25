@@ -24,7 +24,10 @@
       <header>
         <div>
           <span>online - gratuito</span>
-          <h1>Sorteador <br> de Números</h1>
+          <h1>
+            Sorteador <br />
+            de Números
+          </h1>
         </div>
         <ul class="desktop-only">
           <li>
@@ -49,7 +52,6 @@
           </li>
         </ul>
       </header>
-
       <main>
         <div id="title-form">
           <h2>Quero sortear:</h2>
@@ -58,7 +60,7 @@
             veja os resultados na tela. É rápido e fácil!
           </p>
         </div>
-        <form action="">
+        <form id="first-form">
           <div id="sort-form">
             <div class="quantity-numbers input-default">
               <fieldset>
@@ -72,10 +74,10 @@
                 <input type="text" name="initial" id="initial" value="1" />
               </fieldset>
             </div>
-            <div class="last-number input-default">
+            <div class="final-number input-default">
               <fieldset>
                 <legend>Até</legend>
-                <input type="text" name="last" id="last" value="100" />
+                <input type="text" name="last" id="final" value="100" />
               </fieldset>
             </div>
           </div>
@@ -92,6 +94,20 @@
           </div>
         </form>
       </main>
+      <section id="sort-numbers">
+        <div class="title-sort">
+          <h2>Resultado do sorteio</h2>
+          <span>1º resultado</span>
+        </div>
+        <div class="sorted-numbers"></div>
+        <div class="repeat-button">
+          <form id="repeat-form">
+            <input type="submit" name="submit" id="repeat-submit" disabled/>
+          </form>
+          <span>Sortear Novamente</span>
+          <img src="assets/icon-repeat.svg" alt="" />
+        </div>
+      </section>
       <footer class="mobile-only">
         <ul>
           <li>

@@ -1,4 +1,5 @@
 ul{
+    position: static;
     list-style: none;
     display: grid;
     gap: 2.25rem;
