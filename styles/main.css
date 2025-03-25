@@ -28,7 +28,7 @@ form {
         display: grid;
         align-items: center;
         justify-content: center;
-        & legend {
+        & label {
           font: var(--label-sm);
           color: var(--content-secondary);
           text-transform: uppercase;
