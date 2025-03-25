@@ -33,12 +33,12 @@
         diminuteScale 500ms ease 2s forwards;
       border-radius: 1.75rem;
       & span {
+        opacity: 0;
         animation: noRotation 700ms ease 700ms, scale 500ms forwards ease,
           diminuteScale 500ms ease 2s forwards,
           colorInverse 100ms linear 900ms forwards,
-          colorReturn 100ms linear 2s forwards;
+          colorReturn 100ms linear 2s forwards, opacitySpan 200ms linear 1050ms forwards;
         font: 700 3rem/150% var(--ff-roboto-mono);
-        color: var(--content-inverse);
       }
     }
   }
@@ -111,7 +111,7 @@
 
 @keyframes colorInverse {
   100% {
-    color: var(--color-inverse);
+    color: var(--content-inverse);
   }
 }
 
@@ -199,6 +199,15 @@
   }
   100% {
     transform: rotate(-180deg);
+  }
+}
+
+@keyframes opacitySpan{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
 
